@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp"
+    tools:context=".MyCarsDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivMyCarsImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tvMyCarsModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"/>
+        <TextView
+            android:id="@+id/tvMyCarsCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"/>
+        <TextView
+            android:id="@+id/tvMyCarsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"/>
+        <TextView
+            android:id="@+id/tvMyCarsPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"/>
+
+        <Button
+            android:id="@+id/btnMyCarsReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:text="Return"
+            android:textAllCaps="true"
+            android:layout_marginTop="10sp"
+            />
+    </LinearLayout>
+</LinearLayout>

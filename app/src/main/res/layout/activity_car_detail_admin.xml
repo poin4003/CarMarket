@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DETAIL"
+            android:textColor="#F44336"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Model: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etCarModelAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input car models"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Company: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etCarCompanieAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input car companies"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Description: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etCarDescriptionAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input car Description"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Price: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etCarPriceAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input car prices"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivCarImageAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="#CCCCCC"/>
+
+        <Button
+            android:id="@+id/btnSelectImageAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:text="Select Image"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/btnUpdateCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Update car"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/btnDeleteCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="Delete car"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/btnCancelAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:text="Cancel"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+</ScrollView>
